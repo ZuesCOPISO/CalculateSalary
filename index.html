@@ -18,13 +18,13 @@
         <input type="number" id="age" required><br><br>
 
         <label for="dob">Date of Birth:</label>
-        <input type="date" id="dob" required><br><br>
+        <input type="date" id="dob" required><hr>
 
         <label>Gender:</label><br>
         <input type="radio" id="male" name="gender" value="Male" required>
         <label for="male">Male</label><br>
         <input type="radio" id="female" name="gender" value="Female" required>
-        <label for="female">Female</label><br><br>
+        <label for="female">Female</label><hr>
 
         <label>Greeting Type:</label><br>
         <select id="greetingType" required>
@@ -32,7 +32,7 @@
             <option value="Mrs">Mrs</option>
             <option value="Miss">Miss</option>
             <option value="Doctor">Doctor</option>
-        </select><br><br>
+        </select><hr>
 
         <label>Subjects:</label><br>
         <input type="checkbox" id="html" value="HTML">
@@ -44,7 +44,7 @@
         <input type="checkbox" id="angular" value="Angular">
         <label for="angular">Angular</label><br>
         <input type="checkbox" id="vuejs" value="VueJS">
-        <label for="vuejs">VueJS</label><br><br>
+        <label for="vuejs">VueJS</label><hr>
 
         <label for="working">Are you working?</label>
         <input type="checkbox" id="working" onchange="toggleWorkingHours()" required><br><br>
@@ -54,10 +54,10 @@
             <input type="number" id="hours" required><br><br>
 
             <label for="rate">Hourly Rate:</label>
-            <input type="number" id="rate" required><br><br>
+            <input type="number" id="rate" required><hr>
 
             <label for="taxRate">Tax Rate (%):</label>
-            <input type="number" id="taxRate" required><br><br>
+            <input type="number" id="taxRate" required>hr
         </div>
 
         <button type="button" onclick="calculateSalary()">Calculate Salary</button><br><br>
