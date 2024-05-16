@@ -9,13 +9,13 @@
 <body>
     <form id="Form">
         <label for="firstName">First Name:</label>
-        <input type="text" id="firstName" required><br><br>
+        <input type="text" id="firstName" required> <hr>
 
         <label for="lastName">Last Name:</label>
-        <input type="text" id="lastName" required><br><br>
+        <input type="text" id="lastName" required><hr>
 
         <label for="age">Age:</label>
-        <input type="number" id="age" required><br><br>
+        <input type="number" id="age" required><hr>
 
         <label for="dob">Date of Birth:</label>
         <input type="date" id="dob" required><hr>
@@ -26,7 +26,7 @@
         <input type="radio" id="female" name="gender" value="Female" required>
         <label for="female">Female</label><hr>
 
-        <label>Greeting Type:</label><br>
+        <label>Greeting Type:</label><hr>
         <select id="greetingType" required>
             <option value="Mr">Mr</option>
             <option value="Mrs">Mrs</option>
@@ -47,11 +47,11 @@
         <label for="vuejs">VueJS</label><hr>
 
         <label for="working">Are you working?</label>
-        <input type="checkbox" id="working" onchange="toggleWorkingHours()" required><br><br>
+        <input type="checkbox" id="working" onchange="toggleWorkingHours()" required><hr>
 
         <div id="workingHours" class="hidden">
             <label for="hours">Working Hours:</label>
-            <input type="number" id="hours" required><br><br>
+            <input type="number" id="hours" required><hr>
 
             <label for="rate">Hourly Rate:</label>
             <input type="number" id="rate" required><hr>
@@ -60,7 +60,7 @@
             <input type="number" id="taxRate" required>hr
         </div>
 
-        <button type="button" onclick="calculateSalary()">Calculate Salary</button><br><br>
+        <button type="button" onclick="calculateSalary()">Calculate Salary</button><hr>
 
         <label id="output"></label>
     </form>
