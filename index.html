@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/styles.css">
+    <title>Calculate Salary</title>
+</head>
+<body>
+    <form id="Form">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" required><br><br>
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" required><br><br>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" required><br><br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" required><br><br>
+
+        <label>Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="Male" required>
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="Female" required>
+        <label for="female">Female</label><br><br>
+
+        <label>Greeting Type:</label><br>
+        <select id="greetingType" required>
+            <option value="Mr">Mr</option>
+            <option value="Mrs">Mrs</option>
+            <option value="Miss">Miss</option>
+            <option value="Doctor">Doctor</option>
+        </select><br><br>
+
+        <label>Subjects:</label><br>
+        <input type="checkbox" id="html" value="HTML">
+        <label for="html">HTML</label><br>
+        <input type="checkbox" id="css" value="CSS">
+        <label for="css">CSS</label><br>
+        <input type="checkbox" id="javascript" value="JavaScript">
+        <label for="javascript">JavaScript</label><br>
+        <input type="checkbox" id="angular" value="Angular">
+        <label for="angular">Angular</label><br>
+        <input type="checkbox" id="vuejs" value="VueJS">
+        <label for="vuejs">VueJS</label><br><br>
+
+        <label for="working">Are you working?</label>
+        <input type="checkbox" id="working" onchange="toggleWorkingHours()" required><br><br>
+
+        <div id="workingHours" class="hidden">
+            <label for="hours">Working Hours:</label>
+            <input type="number" id="hours" required><br><br>
+
+            <label for="rate">Hourly Rate:</label>
+            <input type="number" id="rate" required><br><br>
+
+            <label for="taxRate">Tax Rate (%):</label>
+            <input type="number" id="taxRate" required><br><br>
+        </div>
+
+        <button type="button" onclick="calculateSalary()">Calculate Salary</button><br><br>
+
+        <label id="output"></label>
+    </form>
+    <script src="./script/code.js"></script>
+</body>
+</html>
